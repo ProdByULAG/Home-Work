@@ -1,6 +1,6 @@
 # HOME WORKS
-N = 'y'
-while N == 'y':
+list_ = [1]
+for i in list_:
     num1 = int(input("Введите первое число"))
     o = (input("Введите операцию"))
     num2 = int(input("Введите второе число"))
@@ -18,5 +18,4 @@ while N == 'y':
         print(num1 + - num2)
     else:
         print("Error")
-        N = input("Введите 'y' чтобы продолжить, или любую клавишу чтобы завершить")
-
+    list_.append(i)
