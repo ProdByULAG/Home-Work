@@ -1,7 +1,7 @@
 def shift(l, num):
     if num > 0:
         for i in range(1, num):
-            n = l.pop() #удаляет последнее число
+            n = l.pop()                            #удаляет последнее число
             l.insert(0, n)
             print(l)
     elif num < 0:
