@@ -4,7 +4,7 @@ from random import randint
 
 a =[]
 for i in range(10):
-    a.append(randint(1, 100))
+    a.append(randint(1, 10000000))
 
 a.sort()
 print(a)
