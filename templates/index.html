@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Все продукты</h1>
+{% for i in all_products %}
+    <p>{{ i.product_title  }}  </p>
+    <p>{{ i.product_description }}:Описание продукта </p>
+    <p>{{ i.product_price  }}:Цена продукта </p>
+    <p>{{ i.product_category  }}:Категория  продукта </p>
+{% endfor%}
+</body>
+</html>
