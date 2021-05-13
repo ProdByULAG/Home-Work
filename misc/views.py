@@ -3,20 +3,20 @@ from django.http import HttpResponse
 
 
 # Create your views here.
-from misc.models import Product
+from misc.models import Product, Category
 
 
 def product_detail(request):
     product = Product.objects.all()
     data = {
-        'all_products' : product
+        'all_products': product
     }
     return render(request, 'index.html', context=data)
 
 
-def get_one_product(request, product_title):
-    products = Product.objects.get(product_title=product_title)
+def get_one_product(request, id):
+    product = Product.objects.get(id=id)
     data = {
-        'product': products
+        'product': product
     }
     return render(request, 'detail.html', context=data)
