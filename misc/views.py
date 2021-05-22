@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 
 # Create your views here.
-from misc.models import Product, Category
+from misc.models import Product, Category, Review
 
 
 def product_detail(request):
@@ -15,8 +15,10 @@ def product_detail(request):
 
 
 def get_one_product(request, id):
-    product = Product.objects.get(id=id)
+    products = Product.objects.get(id=id)
+    reviews = Review.objects.filter(product__id=id)
     data = {
-        'product': product
+        'products': products,
+        'reviews': reviews,
     }
     return render(request, 'detail.html', context=data)
