@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Category Add</title>
-</head>
-<body>
+{% extends 'layout.html' %}
+{% block content %}
+<a href="/product/"> <button>"Назад к продукциям"</button> </a>
 <form action="/add_category/" method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="ADD CATEGORY">
 </form>
-</body>
-</html>
+{% endblock %}
