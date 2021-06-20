@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework.decorators import api_view
 from rest_framework.exceptions import NotFound
 from rest_framework.response import Response
-from .serializers import PostListSerializer, CommentListSerializer
+from .serializers import PostListSerializer, CommentItemSerializer
 from .models import Post, Comment
 # Create ygitour views here.
 
@@ -31,5 +31,5 @@ def comment_item_view(request, id):
         comment = Comment.objects.get(id=id)
     except Comment.DoesNotExist:
         raise NotFound('Такого пиздежа нету :(')
-    data = CommentListSerializer(comment).data
+    data = CommentItemSerializer(comment).data
     return Response(data=data)
