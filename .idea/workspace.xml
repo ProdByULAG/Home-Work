@@ -10,8 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e50961d-6381-4f0c-9ca0-d4c58dfdf128" name="Default Changelist" comment="Home1">
+    <list default="true" id="5e50961d-6381-4f0c-9ca0-d4c58dfdf128" name="Default Changelist" comment="Home2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home4/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home4/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home4/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home4/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/disc/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/disc/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/disc/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/disc/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/disc/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/disc/views.py" afterDir="false" />
@@ -115,7 +118,8 @@
       <workItem from="1624008059223" duration="5146000" />
       <workItem from="1624021704430" duration="110000" />
       <workItem from="1624197910702" duration="511000" />
-      <workItem from="1624198445609" duration="1091000" />
+      <workItem from="1624198445609" duration="1705000" />
+      <workItem from="1625570200661" duration="6915000" />
     </task>
     <task id="LOCAL-00001" summary="Home1">
       <created>1624012281012</created>
@@ -124,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624012281012</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Home2">
+      <created>1624199562463</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1624199562463</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +155,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Home1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Home1" />
+    <MESSAGE value="Home2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Home2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1624021804758">
@@ -183,10 +195,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1624017377015" />
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1624012388701">
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1624199565280">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1624012388701" />
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1624199565280" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Home4$views.coverage" NAME="views Coverage Results" MODIFIED="1624009123597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/disc" />

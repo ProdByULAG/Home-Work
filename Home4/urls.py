@@ -18,7 +18,12 @@ from django.urls import path
 from disc import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/posts/', views.post_list_view),
-    path('api/v1/posts/<int:id>', views.post_item_view),
-    path('api/v1/comments/<int:id>', views.comment_item_view),
+    path('api/v1/posts/', views.GetCreatePost.as_view()),
+    path('api/v1/posts/<int:id>/', views.post_item_view),
+    path('api/v1/comments/<int:id>/', views.comment_item_view),
+    path('api/v1/posts/<int:id>/comments/', views.CreateComment.as_view()),
+    path('api/v1/register/', views.Register.as_view()),
+    path('api/v1/login/', views.Login.as_view()),
+    path('api/v1/like/', views.GetCreateClass.as_view()),
+
 ]
