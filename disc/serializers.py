@@ -58,12 +58,6 @@ class CreatePostSerializer(serializers.ModelSerializer):
         return attrs
 
 
-class CreateUser(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = 'username password email'.split()
-
-
 class CreateLike(serializers.ModelSerializer):
     class Meta:
         model = Like

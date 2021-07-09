@@ -8,7 +8,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from .serializers import PostListSerializer, CommentItemSerializer, CreateCommentSerializer, CreatePostSerializer, \
-    CreateUser, CreateLike
+     CreateLike
 from .models import Post, Comment, Like
 
 
@@ -51,17 +51,17 @@ class CreateComment(CreateAPIView):
     serializer_class = CreateCommentSerializer
 
 
-class Register(CreateAPIView):
-    queryset = User.objects.filter()
-    serializer_class = CreateUser
-
-    def post(self, request, *args, **kwargs):
-        print(request.data)
-
-        username, password, email = request.data["username"], request.data["password"], request.data["email"]
-        user = User.objects.create(username=username, email=email)
-        user.set_password(raw_password=password)
-        return user
+# class Register(CreateAPIView):
+#     queryset = User.objects.filter()
+#     serializer_class = CreateUser
+#
+#     def post(self, request, *args, **kwargs):
+#         print(request.data)
+#
+#         username, password, email = request.data["username"], request.data["password"], request.data["email"]
+#         user = User.objects.create(username=username, email=email)
+#         user.set_password(raw_password=password)
+#         return user
 
 
 class GetCreateClass(ListCreateAPIView):
@@ -69,15 +69,15 @@ class GetCreateClass(ListCreateAPIView):
     serializer_class = CreateLike
 
 
-class Login(APIView):
-
-    def get(self, request, *args, **kwargs):
-        data = request.query_params
-        username = data['username']
-        password = data['password']
-        user = User.objects.filter(username=username, password=password)
-        print(user)
-
-        return Response(data={
-            "message": 'okay'
-        })
+# class Login(APIView):
+#
+#     def get(self, request, *args, **kwargs):
+#         data = request.query_params
+#         username = data['username']
+#         password = data['password']
+#         user = User.objects.filter(username=username, password=password)
+#         print(user)
+#
+#         return Response(data={
+#             "message": 'okay'
+#         })
